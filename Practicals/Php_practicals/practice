@@ -1,0 +1,20 @@
+
+<?php
+$prices = array("brand new computer" => 2000,
+	             "2 months of lynda.com" => 30,
+	              "Learning PHP"=> null);
+
+
+ foreach ($prices as $items =>$price){
+ 	echo "{$items}", ":";
+ 	if (is_int($price)) {
+ 		echo "$" . $price;
+ 	} else {
+ 		echo "priceless";
+ 	}
+ 	echo "<br/> ";
+ }  // output : brand new computer:$2000
+     //2 months of lynda.com:$30
+     //Learning PHP:priceless
+
+?>

@@ -1,0 +1,18 @@
+DROP TABLE IF EXISTS staff;
+DROP TABLE IF EXISTS courses ;
+CREATE TABLE staff (ID int NOT NULL,Name VARCHAR(20),Email VARCHAR(20),Office VARCHAR(4),PRIMARY KEY (ID));
+CREATE TABLE courses (ID VARCHAR(6) NOT NULL, Name VARCHAR(50), Coordinator int REFERENCES staff, PRIMARY KEY (ID)) ;
+INSERT INTO staff VALUES (1,'Dr. Mario Kolberg','mko@cs.stir.ac.uk','4B60') ;
+INSERT INTO staff VALUES (2,'Prof. Ken Turner','kjt@cs.stir.ac.uk','4B78') ;
+INSERT INTO staff VALUES (3,'Dr. Simon Jones','sbj@cs.stir.ac.uk','4B63') ;
+INSERT INTO staff VALUES (4,'Prof. Evan Magill','ehm@cs.stir.ac.uk','4X3') ;
+INSERT INTO staff VALUES (5,'Prof. Leslie Smith','lss@cs.stir.ac.uk','4B65') ;
+INSERT INTO staff VALUES (6,'Mr. Bill Johnstone','wsj@cs.stir.ac.uk','4B74') ;
+INSERT INTO courses VALUES ('ITNP72','Networking and Technologies for e-commerce',1) ;
+INSERT INTO courses VALUES ('CSC9V7','Concurrent and Distributed Systems',4) ;
+INSERT INTO courses VALUES ('ITNP82','Multimedia',5) ;
+INSERT INTO courses VALUES ('PDM9L6','IT-Skills',6) ;
+INSERT INTO courses VALUES ('CSC9YH','Telecommunications Systems',1) ;
+INSERT INTO courses VALUES ('CSC9YD','Technologies for e-commerce',1) ;
+INSERT INTO courses VALUES ('ITNP11','Principles and Practise of Programming',3) ;
+INSERT INTO courses VALUES ('CSC9W6','Communications and Networks',2) ;

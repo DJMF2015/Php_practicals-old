@@ -1,0 +1,4 @@
+4B80	Brennan, Heather	hrb@cs.stir.ac.uk
+4X3	Magill, Evan	ehm@cs.stir.ac.uk
+4B60	Kolberg, Mario	mko@cs.stir.ac.uk
+4B62	Shankland, Carron	ces@cs.stir.ac.uk
